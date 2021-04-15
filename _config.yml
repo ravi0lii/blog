@@ -1,0 +1,24 @@
+title: Moritz's Blog
+description: Very interesting posts about technical stuff.
+baseurl: "/"
+url: "https://moritz.pw"
+
+author:
+  name: ravi0lii
+  email: mail@moritz.pw
+  github: ravi0lii
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - .git/
+  - .gitignore
+  - .sass-cache/
+  - .jekyll-cache/
+  - .gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE

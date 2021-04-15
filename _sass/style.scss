@@ -1,0 +1,153 @@
+$color-background: #051519;
+$color-primary: #688a17;
+$content-width: 800px;
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: $color-background;
+    margin: 0;
+    min-height: 100vh;
+}
+
+body {
+    font-family: sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+a, h1, h2, h3, h4, h5, h6 {
+    color: $color-primary;
+}
+
+p, code, ul, ol {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-weight: 400;
+}
+
+figure {
+    margin: 0;
+}
+
+code {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 4px;
+}
+
+pre {
+	display: block;
+	padding: 20px;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, 0.5);
+	overflow-x: auto;
+
+	code {
+		background: none;
+	}
+}
+
+@media(min-width: $content-width) {
+	main {
+		p, code, ul, ol {
+			font-size: 1.2rem;
+			line-height: 1.8rem;
+		}
+	}
+}
+
+header {
+    padding-top: 20px;
+    border-bottom: thin solid $color-primary;
+
+    h1 {
+        color: $color-primary;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav {
+        overflow-x: auto;
+        white-space: nowrap;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                display: inline-block;
+
+                a {
+                    padding: 20px;
+                    display: inline-block;
+                }
+            }
+
+            li[aria-current] a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+main {
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+footer {
+    padding: 20px 0;
+    border-top: thin solid $color-primary;
+
+    .container {
+        display: flex;
+        flex-direction: horizontal;
+
+        @media (max-width: 550px) {
+            display: block;
+        }
+    }
+
+    .container > * {
+        flex: 1;
+        margin: 0 20px;
+    }
+
+    ul.link-list {
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+.container {
+    display: block;
+    max-width: $content-width;
+    margin: 0 auto;
+}
+
+.page-title {
+    padding-bottom: 16px;
+    border-bottom: thin solid rgba(255, 255, 255, 0.2);
+}
+
+article.feed-item {
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+	border-bottom: thin solid rgba(255, 255, 255, 0.2);
+
+	:last-child {
+		margin-bottom: 0;
+	}
+}
+
+article.feed-item:first-child {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+article.feed-item:last-child {
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
