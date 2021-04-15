@@ -46,6 +46,7 @@
             <div>
                 <ul class="link-list">
                     <li>E-Mail: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
+                    <li>Mastodon: <a rel="me" href="https://{{ site.author.mastodon.instance }}/@{{ site.author.mastodon.username }}">@{{ site.author.mastodon.username }}@{{ site.author.mastodon.instance }}</a></li>
                     <li><a href="{{ '/feed.xml' | relative_url }}">Atom feed</a></li>
                     <li><a href="https://github.com/{{ site.author.github }}">Github</a></li>
                 </ul>

@@ -7,6 +7,12 @@ author:
   name: ravi0lii
   email: mail@moritz.pw
   github: ravi0lii
+  mastodon:
+    username: ravi0li
+    instance: chaos.social
+
+sass:
+  style: compressed
 
 plugins:
   - jekyll-feed
