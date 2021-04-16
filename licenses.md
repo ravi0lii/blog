@@ -3,6 +3,14 @@ layout: default
 title: Licenses
 ---
 
+# Normalize.css
+```
+The MIT License (MIT)
+
+Copyright © Nicolas Gallagher and Jonathan Neal
+```
+The full license is available [here]({{ '/assets/css/normalize/LICENSE' | relative_url }}).
+
 # Font credits
 ## Iosevka
 ```
