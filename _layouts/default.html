@@ -7,10 +7,10 @@
     <meta name="theme-color" content="#688a17">
 
     <link rel="stylesheet" href="{{ '/assets/css/normalize/normalize.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/fonts/iosevka/iosevka.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="{{ '/feed.xml' | relative_url }}">
+    {% feed_meta %}
 
     {% seo %}
 </head>
@@ -45,8 +45,13 @@
                     {{ site.description }}
                 </p>
                 <p>
-                    Information about third-party licenses can be found <a href="{{ '/licenses' | relative_url }}">here</a>.
+                    Information about third-party licenses can be found <a href="{{ '/licenses.html' | relative_url }}">here</a>.
                 </p>
+                <div class="divider-grey"></div>
+                <ul class="link-list">
+                    <li><a href="{{ '/privacy.html' | relative_url }}">Privacy Policy</a></li>
+                    <li><a href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a></li>
+                </ul>
             </div>
             <div>
                 <ul class="link-list">

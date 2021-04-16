@@ -27,6 +27,12 @@ p, code, ul, ol {
 	font-weight: 400;
 }
 
+.divider-grey {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: thin solid rgba(255, 255, 255, 0.2);
+}
+
 figure {
     margin: 0;
 }
@@ -44,7 +50,7 @@ pre {
 	overflow-x: auto;
 
 	code {
-        font-family: 'Iosevka Web', sans-serif;
+        font-family: 'Iosevka Web', monospace;
 		background: none;
 	}
 }
@@ -63,10 +69,9 @@ header {
     border-bottom: thin solid $color-primary;
 
     h1 {
-        color: $color-primary;
         margin: 0;
         text-align: center;
-        font-family: 'Iosevka Web', sans-serif;
+        font-family: 'Iosevka Web', monospace;
     }
 
     nav {
